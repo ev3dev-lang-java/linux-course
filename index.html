@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>EV3Dev linux course</title>
+
+    <meta name="description" content="EV3Dev linux course">
+    <meta name="author" content="Juan Antonio Breña Moral">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"> 
+
+    <link rel="stylesheet" href="Styles/reveal.css">
+    <link rel="stylesheet" href="Styles/theme/serif.css" id="theme">  
+    <link rel="stylesheet" href="Styles/main.css">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="Styles/zenburn.css">
+
+    <!-- Cache -->
+    <meta http-equiv="cache-control" content="no-store" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" /> 
+
+    <!-- Icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.ico">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background="./Images/2000px-Tux.svg.png" data-background-repeat="repeat" data-background-size="200px">
+                <h1>Linux Course</h1>
+                <h3>Discovering Linux on your robot</h3>
+                <img src="./Images/logo_ev3dev_mono.png" />
+                <p><a href="http://www.iloveneutrinos.com" target="_blank">I Love Neutrinos</a></p>
+            </section>
+            <section>
+                <h2>Agenda I</h2>
+                <ul>
+                    <li>Educational goals</li>
+                    <li>What is EV3Dev?</li>
+                    <li>Installing EV3Dev on your brick</li>
+                    <li>Remote Connection</li>
+                    <ul>
+                        <li>Terminal, Putty &amp; Filezilla</li>
+                    </ul>
+                    <li>EV3Dev menu</li>
+                    <li>EV3Dev /sys/class</li>
+                    <li>Linux file system</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Agenda II</h2>
+                <ul>
+                    <li>Processes</li>
+                    <li>Users, Passwords &amp; Groups</li>
+                    <li>Network</li>
+                    <li>Utilities</li>
+                    <ul>
+                        <li>Package Manager</li>
+                    </ul>
+                    <li>Network</li>
+                    <li>Conclusions</li>
+                    <li>References</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Educational Goals</h2>
+                <ul>
+                    <li>Learn to install EV3Dev</li>
+                    <li>Learn to use Linux</li>
+                    <li>Learn to use /sys/class</li>
+                    <li>Learn to use a textual programming language</li>
+                    <li>Learn to use shell scripting</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>Thanks</h2>
+            </section>
+        </div>
+    </div>
+
+    <script src="Scripts/head.min.js"></script>
+    <script src="Scripts/reveal.js"></script>
+    <script>
+
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            // Enable slide navigation via mouse wheel
+            mouseWheel: true,
+            // Hides the address bar on mobile devices
+            hideAddressBar: true,
+
+            transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [
+                // Syntax highlight for <code> elements 
+                { src: 'Scripts/plugins/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ]
+
+        });
+
+    </script>
+</body>
+</html>
